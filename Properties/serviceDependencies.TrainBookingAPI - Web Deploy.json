@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "ignored": "true",
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:TrainAppCon"
+    },
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/trainbookingapidb/databases/TrainBookingAPI_db",
+      "type": "mssql.azure",
+      "connectionId": "TrainBookingAPI_DBConnection"
+    }
+  }
+}
